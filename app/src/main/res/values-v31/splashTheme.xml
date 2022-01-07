@@ -2,9 +2,10 @@
 <resources>
 
     <style name="splashTheme.starting" parent="Theme.SplashScreen">
-        <item name="android:windowSplashScreenBackground">@color/medium_purple</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/mock_logo</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_baseline_local_laundry_service_24</item>
+        <item name="windowSplashScreenBackground">@color/medium_purple</item>
         <item name="postSplashScreenTheme">@style/Theme.LaundroPool</item>
+
     </style>
 
 </resources>

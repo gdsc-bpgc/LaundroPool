@@ -10,7 +10,6 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import com.gdsc.laundropool.ViewModels.OnBoardingViewModel
 import com.gdsc.laundropool.databinding.ActivityOnBoardingBinding
-import kotlinx.coroutines.delay
 
 class OnBoarding : AppCompatActivity() {
 
@@ -28,11 +27,10 @@ class OnBoarding : AppCompatActivity() {
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        setSupportActionBar(binding.toolbar)
 
         val navController = findNavController(R.id.nav_host_fragment_content_on_boarding)
         appBarConfiguration = AppBarConfiguration(navController.graph)
-//        setupActionBarWithNavController(navController, appBarConfiguration)
+
 
         binding.fab.setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
