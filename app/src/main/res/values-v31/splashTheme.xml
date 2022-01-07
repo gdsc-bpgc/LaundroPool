@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="splashTheme.starting" parent="Theme.SplashScreen">
+        <item name="android:windowSplashScreenBackground">@color/medium_purple</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/mock_logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.LaundroPool</item>
+    </style>
+
+</resources>
