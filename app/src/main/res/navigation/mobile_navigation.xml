@@ -12,14 +12,28 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.gdsc.laundropool.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_about"
+        android:name="com.gdsc.laundropool.ui.About.AboutFragment"
+        android:label="about_fragment"
+        tools:layout="@layout/about_fragment" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.gdsc.laundropool.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_help"
+        android:name="com.gdsc.laundropool.ui.Help.HelpFragment"
+        android:label="help_fragment"
+        tools:layout="@layout/help_fragment" />
+    <fragment
+        android:id="@+id/nav_my_open_pool"
+        android:name="com.gdsc.laundropool.ui.MyOpenPool.MyOpenPoolFragment"
+        android:label="my_open_pool_fragment"
+        tools:layout="@layout/my_open_pool_fragment" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.gdsc.laundropool.ui.Notifications.NotificationsFragment"
+        android:label="notifications_fragment"
+        tools:layout="@layout/notifications_fragment" />
+    <fragment
+        android:id="@+id/nav_past_pool"
+        android:name="com.gdsc.laundropool.ui.PastPools.PastPoolsFragment"
+        android:label="past_pools_fragment"
+        tools:layout="@layout/past_pools_fragment" />
 </navigation>
