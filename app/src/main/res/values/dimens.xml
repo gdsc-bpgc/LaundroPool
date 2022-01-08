@@ -7,4 +7,5 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="login_and_register_start_spacing">35dp</dimen>
     <dimen name="login_and_register_start_spacing2">30dp</dimen>
+    <dimen name="popup_start_spacing">25dp</dimen>
 </resources>
