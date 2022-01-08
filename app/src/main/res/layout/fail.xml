@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/backbuttontop"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="25dp" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="38dp"
+            android:layout_width="305dp"
+            android:layout_height="343dp"
+            app:lottie_rawRes="@raw/fail"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"/>
+        <ImageView
+            android:layout_width="293dp"
+            android:layout_height="58dp"
+            app:layout_constraintTop_toBottomOf="@+id/animationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/snap"
+            android:src="@drawable/oh_snap__request_rejected" />
+        <ImageView
+            android:layout_width="255dp"
+            android:layout_height="58dp"
+            app:layout_constraintTop_toBottomOf="@+id/snap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/notification_fail"
+            android:src="@drawable/h2_copy"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="316dp"
+            android:layout_height="54dp"
+            android:id="@+id/cardpurple"
+            app:layout_constraintTop_toBottomOf="@+id/notification_fail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="@color/bg_purple">
+            <ImageView
+                android:layout_width="85dp"
+                android:layout_height="37dp"
+                android:src="@drawable/please_try_again"
+                android:layout_marginStart="121dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="9dp"
+                android:layout_marginEnd="110dp"
+                android:id="@+id/tryagain"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:id="@+id/backbutton"
+            app:layout_constraintTop_toBottomOf="@id/cardpurple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:foregroundGravity="center_vertical"
+            android:src="@drawable/back_button"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/empty"
+            android:layout_marginBottom="30dp"/>
+
+        <TextView
+            android:layout_width="9dp"
+            android:layout_height="14dp"
+            android:id="@+id/empty"
+            app:layout_constraintStart_toEndOf="@+id/backbutton"
+            app:layout_constraintEnd_toStartOf="@+id/back"
+            app:layout_constraintTop_toBottomOf="@id/cardpurple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="14dp"
+            android:id="@+id/back"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/cardpurple"
+            app:layout_constraintStart_toEndOf="@+id/empty"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="140dp"
+            android:src="@drawable/back_to_home"
+            android:layout_marginBottom="30dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
