@@ -1,25 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.onBoarding.LoginFragment">
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="This is the login fragment"
-        android:textSize="26sp"/>
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/go_to_main_activity_button_fl"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:text="Go to main activity"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:id="@+id/PurpleBackgroundImage"
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:src="@drawable/gradient_navigation_drawer"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="-65dp"
+            />
+        <ImageView
+            android:id="@+id/TextureImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vector"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="200dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/WelcomBackText"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Welcome Back!"
+            android:textSize="28sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/GreetingsText"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Yay! You're back! \n Thanks for using the app."
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="160dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/LogInText"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="LOG IN"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="290dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/BitsMailText"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="BITSMail"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MailInputTextLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="425dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/MailInputTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/mail_icon"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:hint="Enter Your BITS Mail ID"
+                />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:id="@+id/PasswordText"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Password"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="490dp"
+            android:layout_marginLeft="35dp"
+            android:textColor="@color/black"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/PasswordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="525dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PasswordInputTextBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/password_icon"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:hint="Enter Your Password"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:id="@+id/RememberMeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="595dp"
+            android:layout_marginStart="26dp"
+            android:text="Remember Me"
+            style="@style/Widget.LaundroPool.TextView"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/go_to_main_activity_button_fl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="650dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/roundedbutton"
+            android:fontFamily="@font/lato_bold"
+            android:text="LOG IN"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <Button
+            android:id="@+id/ForgotPasswordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="595dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Forgot Password?"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.LaundroPool.Button"
+            android:textSize="12sp"
+            />
+        <TextView
+            android:id="@+id/textView6"
+            style="@style/Widget.LaundroPool.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="Not Registered Yet?"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="695dp"
+            android:layout_marginLeft="80dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/CreateAccountButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="695dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="Create An Account"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.LaundroPool.Button"
+            android:textSize="12sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
