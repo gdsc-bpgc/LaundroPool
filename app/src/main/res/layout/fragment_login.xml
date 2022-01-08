@@ -26,9 +26,9 @@
             android:layout_height="wrap_content"
             android:src="@drawable/vector"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="200dp"
+            android:layout_marginEnd="15dp"
             />
 
 
@@ -179,7 +179,7 @@
             android:layout_marginRight="30dp"
             android:fontFamily="@font/lato_bold"
             android:text="Forgot Password?"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             style="@style/Widget.LaundroPool.Button"
             android:textSize="12sp"
@@ -193,9 +193,10 @@
             android:text="Not Registered Yet?"
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="695dp"
-            android:layout_marginLeft="80dp"
+            android:layout_marginStart="-120dp"
             android:gravity="center_vertical"
             android:textColor="@color/black"/>
         <Button
@@ -203,11 +204,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="695dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginStart="120dp"
             android:fontFamily="@font/lato_bold"
             android:text="Create An Account"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             style="@style/Widget.LaundroPool.Button"
             android:textSize="12sp"
