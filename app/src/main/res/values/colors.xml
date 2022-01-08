@@ -10,4 +10,5 @@
     <color name="medium_purple">#8E79E3</color>
     <color name="purple_gradient_lite">#A573FF</color>
     <color name="purple_gradient_dark">#7F77FE</color>
+    <color name="bg_purple">#6342E8</color>
 </resources>
