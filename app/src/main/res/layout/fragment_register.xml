@@ -45,7 +45,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="100dp"
-            android:layout_marginLeft="35dp"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/white"/>
         <TextView
             android:id="@+id/AlreadyHaveAccountText"
@@ -56,21 +56,20 @@
             android:text="Already Have An Account?"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="170dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/GetStartedText"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/white"/>
         <Button
             android:id="@+id/LogInRedirectButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="170dp"
-            android:layout_marginLeft="235dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
             android:fontFamily="@font/lato_bold"
             android:text="Log In"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/AlreadyHaveAccountText"
+            app:layout_constraintTop_toBottomOf="@id/GetStartedText"
             style="@style/Widget.LaundroPool.Button"
             android:textSize="16sp"
             android:textColor="@color/white"
@@ -84,11 +83,12 @@
             android:text="REGISTER"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="290dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/AlreadyHaveAccountText"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/white"/>
         <TextView
+            android:id="@+id/YourNameText"
             style="@style/Widget.LaundroPool.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -96,19 +96,18 @@
             android:text="Your Name"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="390dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/RegisterText"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/black"/>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/NameInputTextLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/YourNameText"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="425dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -124,6 +123,7 @@
 
         </com.google.android.material.textfield.TextInputLayout>
         <TextView
+            android:id="@+id/MailHeadingText"
             style="@style/Widget.LaundroPool.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -131,19 +131,18 @@
             android:text="Email Address"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="490dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/NameInputTextLayout"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
+            android:layout_marginTop="10dp"
             android:textColor="@color/black"/>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/MailRegisterInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/MailHeadingText"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="525dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -160,25 +159,37 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/HostelHeading"
             style="@style/Widget.LaundroPool.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:text="Hostel"
             android:textSize="16sp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="590dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/MailRegisterInputLayout"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/black"/>
+        <Spinner
+            android:id="@+id/HostelInputSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/HostelHeading"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing2"
+            app:layout_constraintEnd_toStartOf="@id/RoomNumberInputLayout"
+            android:layout_marginEnd="10dp"
+            />
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/RoomNumberInputLayout"
-            android:layout_width="200dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/HostelHeading"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_marginTop="625dp"
-            android:layout_marginEnd="30dp"
+            app:layout_constraintStart_toEndOf="@id/HostelInputSpinner"
+            android:layout_marginTop="-20dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -195,6 +206,7 @@
 
 
         <TextView
+            android:id="@+id/PhoneNumberHeading"
             style="@style/Widget.LaundroPool.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -202,19 +214,18 @@
             android:text="Phone Number"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="685dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/RoomNumberInputLayout"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/black"/>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/PhoneNumberInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PhoneNumberHeading"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="720dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -232,26 +243,26 @@
 
 
         <TextView
+            android:id="@+id/PasswordHeading"
             style="@style/Widget.LaundroPool.TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/lato_bold"
             android:text="Password"
             android:textSize="16sp"
+            android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="785dp"
-            android:layout_marginLeft="35dp"
+            app:layout_constraintTop_toBottomOf="@id/PhoneNumberInputLayout"
+            android:layout_marginStart="@dimen/login_and_register_start_spacing"
             android:textColor="@color/black"/>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/PasswordRegisterInputLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PasswordHeading"
             app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginTop="820dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             >
 
             <com.google.android.material.textfield.TextInputEditText
@@ -271,14 +282,13 @@
             android:id="@+id/go_to_main_activity_button_fr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="930dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginHorizontal="@dimen/login_and_register_start_spacing2"
             android:background="@drawable/roundedbutton"
             android:fontFamily="@font/lato_bold"
             android:text="REGISTER"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/PasswordRegisterInputLayout"
             />
         <TextView
             android:id="@+id/textView6"
@@ -290,8 +300,7 @@
             android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="970dp"
+            app:layout_constraintTop_toBottomOf="@id/go_to_main_activity_button_fr"
             android:gravity="center_vertical"
             android:textColor="@color/black"/>
 
