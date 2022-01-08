@@ -11,4 +11,6 @@
     <color name="purple_gradient_lite">#A573FF</color>
     <color name="purple_gradient_dark">#7F77FE</color>
     <color name="bg_purple">#6342E8</color>
+    <color name="off_white">#FEFEFE</color>
+    <color name="bg_popup">#F1F4FB</color>
 </resources>
