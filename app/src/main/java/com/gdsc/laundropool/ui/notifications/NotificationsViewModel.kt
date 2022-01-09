@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.Notifications
+package com.gdsc.laundropool.ui.notifications
 
 import androidx.lifecycle.ViewModel
 

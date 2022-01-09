@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.MyOpenPool
+package com.gdsc.laundropool.ui.myOpenPool
 
 import androidx.lifecycle.ViewModel
 

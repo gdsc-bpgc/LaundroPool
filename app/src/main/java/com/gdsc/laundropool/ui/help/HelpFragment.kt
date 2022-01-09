@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.About
+package com.gdsc.laundropool.ui.help
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.gdsc.laundropool.R
 
-class AboutFragment : Fragment() {
+class HelpFragment : Fragment() {
 
     companion object {
-        fun newInstance() = AboutFragment()
+        fun newInstance() = HelpFragment()
     }
 
-    private lateinit var viewModel: AboutViewModel
+    private lateinit var viewModel: HelpViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.about_fragment, container, false)
+        return inflater.inflate(R.layout.help_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(AboutViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(HelpViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

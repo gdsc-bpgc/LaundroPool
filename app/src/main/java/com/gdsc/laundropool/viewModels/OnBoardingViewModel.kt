@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ViewModels
+package com.gdsc.laundropool.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

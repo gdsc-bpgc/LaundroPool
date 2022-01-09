@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.MyOpenPool
+package com.gdsc.laundropool.ui.pastPools
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.gdsc.laundropool.R
 
-class MyOpenPoolFragment : Fragment() {
+class PastPoolsFragment : Fragment() {
 
     companion object {
-        fun newInstance() = MyOpenPoolFragment()
+        fun newInstance() = PastPoolsFragment()
     }
 
-    private lateinit var viewModel: MyOpenPoolViewModel
+    private lateinit var viewModel: PastPoolsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.my_open_pool_fragment, container, false)
+        return inflater.inflate(R.layout.past_pools_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(MyOpenPoolViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(PastPoolsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

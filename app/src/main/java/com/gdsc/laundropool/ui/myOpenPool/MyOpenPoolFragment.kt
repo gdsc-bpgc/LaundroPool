@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.Notifications
+package com.gdsc.laundropool.ui.myOpenPool
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.gdsc.laundropool.R
 
-class NotificationsFragment : Fragment() {
+class MyOpenPoolFragment : Fragment() {
 
     companion object {
-        fun newInstance() = NotificationsFragment()
+        fun newInstance() = MyOpenPoolFragment()
     }
 
-    private lateinit var viewModel: NotificationsViewModel
+    private lateinit var viewModel: MyOpenPoolViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.notifications_fragment, container, false)
+        return inflater.inflate(R.layout.my_open_pool_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(NotificationsViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(MyOpenPoolViewModel::class.java)
         // TODO: Use the ViewModel
     }
 
