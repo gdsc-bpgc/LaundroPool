@@ -8,6 +8,6 @@ import androidx.room.PrimaryKey
 data class PastPoolsEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "pool_id")
-    val poolId : Int
+    val poolId: Int
 
 )
