@@ -8,7 +8,7 @@ import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import com.gdsc.laundropool.ViewModels.OnBoardingViewModel
+import com.gdsc.laundropool.viewModels.OnBoardingViewModel
 import com.gdsc.laundropool.databinding.ActivityOnBoardingBinding
 
 class OnBoarding : AppCompatActivity() {

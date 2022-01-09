@@ -1,4 +1,4 @@
-package com.gdsc.laundropool.ui.Help
+package com.gdsc.laundropool.ui.notifications
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,24 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import com.gdsc.laundropool.R
 
-class HelpFragment : Fragment() {
+class NotificationsFragment : Fragment() {
 
     companion object {
-        fun newInstance() = HelpFragment()
+        fun newInstance() = NotificationsFragment()
     }
 
-    private lateinit var viewModel: HelpViewModel
+    private lateinit var viewModel: NotificationsViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.help_fragment, container, false)
+        return inflater.inflate(R.layout.notifications_fragment, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(HelpViewModel::class.java)
+        viewModel = ViewModelProvider(this).get(NotificationsViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

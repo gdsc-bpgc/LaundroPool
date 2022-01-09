@@ -1,7 +1,7 @@
-package com.gdsc.laundropool.ui.Help
+package com.gdsc.laundropool.ui.about
 
 import androidx.lifecycle.ViewModel
 
-class HelpViewModel : ViewModel() {
+class AboutViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }
