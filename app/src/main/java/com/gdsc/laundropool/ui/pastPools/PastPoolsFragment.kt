@@ -1,32 +1,29 @@
 package com.gdsc.laundropool.ui.pastPools
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.gdsc.laundropool.R
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import com.gdsc.laundropool.databinding.PastPoolsFragmentBinding
 
 class PastPoolsFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = PastPoolsFragment()
-    }
+    private var _binding: PastPoolsFragmentBinding? = null
 
-    private lateinit var viewModel: PastPoolsViewModel
+    private val binding
+        get() = _binding!!
+
+    private val viewModel: PastPoolsViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.past_pools_fragment, container, false)
-    }
+    ): View {
+        _binding = PastPoolsFragmentBinding.inflate(layoutInflater, container, false)
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(PastPoolsViewModel::class.java)
-        // TODO: Use the ViewModel
+        return binding.root
     }
 
 }
