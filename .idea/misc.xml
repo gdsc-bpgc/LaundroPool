@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/LaundroPool1/app/src/main/res/drawable/capsule_opaque.xml" value="0.26614583333333336" />
+        <entry key="..\:/LaundroPool1/app/src/main/res/font/baloo_bhai.xml" value="0.2921875" />
+        <entry key="..\:/LaundroPool1/app/src/main/res/font/cabin.xml" value="0.28020833333333334" />
         <entry key="..\:/Users/91745/Desktop/LaundroPool/app/src/main/res/drawable/ic_baseline_local_laundry_service_24.xml" value="0.23055555555555557" />
         <entry key="..\:/Users/91745/Desktop/LaundroPool/app/src/main/res/layout/activity_main.xml" value="0.1390625" />
         <entry key="..\:/Users/91745/Desktop/LaundroPool/app/src/main/res/layout/activity_on_boarding.xml" value="0.1793478260869565" />

@@ -7,52 +7,174 @@
     tools:context=".ui.onBoarding.FirstFragment">
 
 
-    <TextView
-        android:layout_marginTop="80dp"
-        android:id="@+id/textview_second"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@id/login_button_ff"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="first screen of the app the app that gives two options \either to register or login"
-        android:layout_marginHorizontal="20dp"
-        android:paddingHorizontal="20dp"
-        android:textSize="24sp"/>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/login_button_ff"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="224dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_second">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Login"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/register_button_ff"
-        android:layout_width="160dp"
-        android:layout_height="60dp"
+    <LinearLayout
+        android:layout_width="292dp"
+        android:layout_height="584dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_button_ff"
-        app:layout_constraintVertical_bias="0.237" >
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent">
+
         <TextView
+            android:id="@+id/textView12"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:text="@string/LaundroPool"
+
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:textSize="41sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/cabin"
+            android:text="Want to give clothes for washing
+but don’t have enough kgs of them?
+Pool your laundry today!"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/lato_bold"
+
+            android:text="Find your friends on laundropool,
+pool your laundry with them,
+and save money!"
+            android:textAlignment="center" />
+
+
+        <!--    <Button-->
+        <!--        android:id="@+id/login_button_ff"-->
+        <!--        android:layout_width="250dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_gravity="center_horizontal"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:background="@drawable/capsule_button"-->
+        <!--        android:fontFamily="@font/lato_bold"-->
+        <!--        android:padding="16dp"-->
+        <!--        android:text="@string/Log_in"-->
+        <!--        android:textAlignment="gravity"-->
+        <!--        android:textColor="#000000"-->
+        <!--        android:textSize="11sp"-->
+        <!--        android:textStyle="normal"-->
+        <!--        />-->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            app:cardCornerRadius="30dp"
+            android:id="@+id/login_button_ff"
+            android:layout_gravity="center"
+            android:contextClickable="true"
+            android:layout_marginTop="20dp"
+            android:elevation="10dp"
+
+
+            >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/Log_in"
+                android:textAlignment="center"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/editTextTextPersonName2"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="-- OR --"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/register_button_ff"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/capsule_opaque"
+            android:fontFamily="@font/lato_bold"
+            android:padding="16dp"
             android:text="Register"
-            android:textSize="18sp"
-            android:gravity="center"/>
-    </androidx.cardview.widget.CardView>
+            android:textAlignment="gravity"
+            android:textColor="#FFFFFF"
+            android:textSize="11sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/vector_3" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/vector_8" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/vector_9" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_6" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_5" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_7" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
